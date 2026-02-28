@@ -9,8 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* ── Contact-specific styles ── */
-
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1.4fr;
@@ -18,15 +16,12 @@
       align-items: start;
       padding-top: 8px;
     }
-
-    /* Contact info items */
     .contact-item {
       display: flex;
       align-items: center;
       gap: 16px;
       margin-bottom: 20px;
     }
-
     .contact-icon {
       width: 48px;
       height: 48px;
@@ -39,14 +34,12 @@
       color: #fff;
       font-size: 1.1rem;
     }
-
     .contact-item-text strong {
       display: block;
       font-size: 0.97rem;
       color: var(--ink);
       margin-bottom: 2px;
     }
-
     .contact-item-text a,
     .contact-item-text span {
       font-size: 0.9rem;
@@ -54,13 +47,10 @@
       text-decoration: none;
       word-break: break-all;
     }
-
     .contact-item-text a:hover {
       color: var(--navy);
       text-decoration: underline;
     }
-
-    /* Research interests box */
     .interests-box {
       background: var(--soft);
       border: 1px solid var(--line);
@@ -68,39 +58,11 @@
       padding: 24px;
       margin-top: 28px;
     }
-
-    .interests-box h3 {
-      margin: 0 0 10px;
-      font-size: 1.1rem;
-      color: var(--navy);
-    }
-
-    .interests-box p {
-      font-size: 0.92rem;
-      color: #2a3b47;
-      margin: 0;
-      line-height: 1.65;
-    }
-
-    /* Form */
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .form-group label {
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: var(--ink);
-    }
-
+    .interests-box h3 { margin: 0 0 10px; font-size: 1.1rem; color: var(--navy); }
+    .interests-box p  { font-size: 0.92rem; color: #2a3b47; margin: 0; line-height: 1.65; }
+    .contact-form { display: flex; flex-direction: column; gap: 18px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group label { font-size: 0.9rem; font-weight: 500; color: var(--ink); }
     .form-group input,
     .form-group textarea {
       width: 100%;
@@ -115,22 +77,11 @@
       transition: border-color 0.2s;
       box-sizing: border-box;
     }
-
     .form-group input:focus,
-    .form-group textarea:focus {
-      border-color: var(--navy);
-    }
-
+    .form-group textarea:focus { border-color: var(--navy); }
     .form-group input::placeholder,
-    .form-group textarea::placeholder {
-      color: #a0adb5;
-    }
-
-    .form-group textarea {
-      resize: vertical;
-      min-height: 150px;
-    }
-
+    .form-group textarea::placeholder { color: #a0adb5; }
+    .form-group textarea { resize: vertical; min-height: 150px; }
     .btn-send {
       display: flex;
       align-items: center;
@@ -148,11 +99,7 @@
       transition: background 0.2s;
       width: 100%;
     }
-
-    .btn-send:hover {
-      background: var(--navy2);
-    }
-
+    .btn-send:hover { background: var(--navy2); }
     @media (max-width: 800px) {
       .contact-grid { grid-template-columns: 1fr; gap: 40px; }
     }
@@ -160,7 +107,6 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <header class="navbar">
     <div class="container nav-inner">
       <a class="brand" href="index.html">Research Portfolio</a>
@@ -179,8 +125,6 @@
   </header>
 
   <main>
-
-    <!-- Hero banner -->
     <section class="page-hero">
       <div class="container">
         <h1>Get in Touch</h1>
@@ -188,7 +132,6 @@
       </div>
     </section>
 
-    <!-- Contact body -->
     <section class="section">
       <div class="container">
         <div class="contact-grid">
@@ -201,7 +144,14 @@
               <div class="contact-icon">&#9993;</div>
               <div class="contact-item-text">
                 <strong>Email</strong>
-                <a href="/cdn-cgi/l/email-protection#620f031b16074c030e1403100718525256220f1b0f06014c0c0716"><span class="__cf_email__" data-cfemail="b2dfd3cbc6d79cd3dec4d3c0d7c8828286f2dfcbdfd6d19cdcd7c6">[email&#160;protected]</span></a>
+                <span id="em"></span>
+                <script>
+                  // Built in JS to prevent Cloudflare from scrambling it
+                  var u = 'mayte.alvarez004';
+                  var d = 'mymdc.net';
+                  var e = u + '@' + d;
+                  document.getElementById('em').innerHTML = '<a href="mailto:' + e + '">' + e + '</a>';
+                </script>
               </div>
             </div>
 
@@ -209,7 +159,7 @@
               <div class="contact-icon">in</div>
               <div class="contact-item-text">
                 <strong>LinkedIn</strong>
-               <a href="https://linkedin.com/in/mayte-a-5245a3346" target="_blank" rel="noopener">Visit my LinkedIn profile</a>
+                <a href="https://linkedin.com/in/mayte-a-5245a3346" target="_blank" rel="noopener">Visit my LinkedIn profile</a>
               </div>
             </div>
 
@@ -227,7 +177,6 @@
               action="https://formsubmit.co/maytealv04@gmail.com"
               method="POST"
             >
-              <!-- Disable captcha & redirect -->
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_subject" value="New message from your portfolio">
               <input type="hidden" name="_next" value="">
@@ -261,9 +210,14 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <footer>
     <div class="container">
-      <span>© <span id="y"></span> Mayte Alvarez · Research P
+      <span>© <span id="y"></span> Mayte Alvarez · Research Portfolio</span>
+    </div>
+    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  </footer>
+
+</body>
+</html>
