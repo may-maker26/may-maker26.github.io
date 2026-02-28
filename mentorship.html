@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mentorship | Mayte Alvarez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── Mentorship-specific styles ── */
+
+    .mentor-profile {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+      padding: 48px 0 32px;
+    }
+
+    .mentor-name {
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      color: var(--navy);
+      margin: 0 0 6px;
+    }
+
+    .mentor-role {
+      font-size: 1rem;
+      color: var(--muted);
+      margin: 0 0 20px;
+    }
+
+    .mentor-photo-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .mentor-photo {
+      width: 100%;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      object-fit: cover;
+      aspect-ratio: 4/3;
+    }
+
+    .mentor-caption {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+      margin: 0;
+    }
+
+    .collab-box {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin: 8px 0 48px;
+    }
+
+    .collab-box h2 {
+      margin-bottom: 16px;
+    }
+
+    .collab-box p {
+      font-size: 0.97rem;
+      line-height: 1.7;
+    }
+
+    .contributions-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 24px;
+    }
+
+    .contrib-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 26px 22px;
+      box-shadow: 0 4px 14px rgba(10,30,45,0.06);
+    }
+
+    .contrib-icon {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      color: var(--navy);
+      display: block;
+    }
+
+    .contrib-card h3 {
+      font-size: 1.05rem;
+      color: var(--navy);
+      margin: 0 0 10px;
+    }
+
+    .contrib-card p {
+      font-size: 0.92rem;
+      color: #2a3b47;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .impact-section {
+      margin-top: 56px;
+      padding-top: 40px;
+      border-top: 1px solid var(--line);
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .impact-grid p {
+      font-size: 0.97rem;
+      line-height: 1.75;
+    }
+
+    .impact-photo {
+      width: 100%;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      object-fit: cover;
+      aspect-ratio: 4/3;
+    }
+
+    @media (max-width: 800px) {
+      .mentor-profile { grid-template-columns: 1fr; }
+      .contributions-grid { grid-template-columns: 1fr; }
+      .impact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Research Portfolio</a>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="manuscript.html">Manuscript</a>
+        <a href="conferences.html">Conferences</a>
+        <a href="mentorship.html" class="active">Mentorship</a>
+        <a href="about.html">About</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero banner -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>👥 Research Collaboration</h1>
+        <p>Working together to advance our understanding of plasma physics</p>
+      </div>
+    </section>
+
+    <!-- Mentor Profile -->
+    <section class="section">
+      <div class="container">
+
+        <div class="mentor-profile">
+          <!-- Left: text -->
+          <div>
+            <h2 class="mentor-name">Professor Adolfo Mendez</h2>
+            <p class="mentor-role">Faculty Researcher, Miami Dade College</p>
+            <p>Professor Mendez specializes in solar physics and plasma dynamics, with extensive experience in radio astronomy and nonlinear systems analysis. His research focuses on understanding the complex behavior of solar emissions and their implications for space weather.</p>
+            <p>Our collaboration has been instrumental in developing innovative approaches to analyzing solar radio burst data and uncovering the deterministic chaos underlying these phenomena.</p>
+          </div>
+
+          <!-- Right: photo -->
+          <div class="mentor-photo-wrap">
+            <img class="mentor-photo" src="mentor-mendez.jpg" alt="Mayte Alvarez and Professor Adolfo Mendez at AGU conference">
+            <p class="mentor-caption">At the American Geophysical Union (AGU) Fall Meeting 2025</p>
+          </div>
+        </div>
+
+        <!-- Collaborative Research Effort -->
+        <div class="collab-box">
+          <h2>Collaborative Research Effort</h2>
+          <p>This research represents a true collaboration between faculty expertise and undergraduate innovation. Professor Mendez provided the theoretical framework and domain knowledge in solar physics, while I contributed the computational implementation and analytical techniques for nonlinear time-series analysis.</p>
+          <p style="margin-bottom:0;">Together, we developed a comprehensive methodology that combines astrophysical insights with advanced mathematical tools, resulting in novel findings about the chaotic nature of solar radio emissions.</p>
+        </div>
+
+        <!-- My Contributions -->
+        <h2>My Contributions to the Research</h2>
+        <div class="contributions-grid">
+
+          <div class="contrib-card">
+            <span class="contrib-icon">💡</span>
+            <h3>Analytical Framework</h3>
+            <p>Designed and implemented the phase-space reconstruction and correlation dimension analysis pipeline.</p>
+          </div>
+
+          <div class="contrib-card">
+            <span class="contrib-icon">💻</span>
+            <h3>Computational Implementation</h3>
+            <p>Developed efficient algorithms for processing large-scale time-series data and generating control datasets.</p>
+          </div>
+
+          <div class="contrib-card">
+            <span class="contrib-icon">📊</span>
+            <h3>Interpretation &amp; Validation</h3>
+            <p>Conducted statistical validation and interpreted results in the context of plasma physics theory.</p>
+          </div>
+
+        </div>
+
+        <!-- Impact -->
+        <div class="impact-section">
+          <div class="impact-grid">
+            <!-- Left: text -->
+            <div>
+              <h2>Impact of Collaboration</h2>
+              <p>This collaborative research experience has been transformative in shaping my approach to scientific inquiry. Working alongside Professor Mendez has taught me the importance of interdisciplinary thinking, rigorous methodology, and clear scientific communication.</p>
+              <p>The partnership has resulted in multiple conference presentations, a manuscript submission, and most importantly, a deeper understanding of how theoretical physics and computational methods can work together to solve complex problems in astrophysics.</p>
+              <p>This experience has solidified my commitment to pursuing graduate studies in plasma physics and continuing to explore the fascinating intersection of nonlinear dynamics, computational science, and astrophysical phenomena.</p>
+            </div>
+            <!-- Right: photo -->
+            <div>
+              <img class="impact-photo" src="mentor-mendez-2.jpg" alt="Collaboration photo">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© <span id="y"></span> Mayte Alvarez · Research Portfolio</span>
+    </div>
+    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  </footer>
+
+</body>
+</html>

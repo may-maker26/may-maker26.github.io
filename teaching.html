@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teaching | Mayte Alvarez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── Teaching-specific styles ── */
+    .philosophy-block {
+      border-left: 4px solid var(--navy);
+      background: var(--soft);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 28px 32px;
+      margin-top: 18px;
+    }
+    .philosophy-block p {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--ink);
+      margin: 0;
+      line-height: 1.75;
+    }
+
+    .role-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin-top: 32px;
+    }
+
+    .role-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: 0 6px 20px rgba(10,30,45,0.07);
+    }
+
+    .role-header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .role-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--navy);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.4rem;
+    }
+
+    .role-header-text h3 {
+      margin: 0 0 4px;
+      font-size: 1.35rem;
+      color: var(--navy);
+    }
+
+    .role-header-text .institution {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .role-section-label {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--ink);
+      margin: 0 0 12px;
+      letter-spacing: 0.01em;
+    }
+
+    .role-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 22px;
+    }
+
+    .role-list li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 10px;
+      color: #2a3b47;
+      font-size: 0.97rem;
+      line-height: 1.6;
+    }
+
+    .role-list li::before {
+      content: "•";
+      position: absolute;
+      left: 4px;
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .impact-box {
+      background: var(--soft);
+      border-radius: 8px;
+      padding: 18px 20px;
+    }
+
+    .impact-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 8px;
+    }
+
+    .impact-box p {
+      font-style: italic;
+      font-size: 0.96rem;
+      color: var(--ink);
+      margin: 0;
+      line-height: 1.65;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Research Portfolio</a>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html" class="active">Teaching</a>
+        <a href="manuscript.html">Manuscript</a>
+        <a href="conferences.html">Conferences</a>
+        <a href="mentorship.html">Mentorship</a>
+        <a href="about.html">About</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero banner -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>📖 Teaching &amp; Mentorship</h1>
+        <p>Fostering collaborative learning and empowering peers in STEM</p>
+      </div>
+    </section>
+
+    <!-- Teaching Philosophy -->
+    <section class="section">
+      <div class="container">
+        <h2>Teaching Philosophy</h2>
+        <div class="philosophy-block">
+          <p>"I believe that effective teaching in STEM requires more than just transmitting knowledge; it involves fostering a collaborative environment where students feel empowered to ask questions, make mistakes, and discover the underlying principles of complex concepts through guided inquiry and peer-led discussion."</p>
+        </div>
+
+        <!-- Role Cards -->
+        <div class="role-cards">
+
+          <!-- STEM Success Center Mathematics Tutor -->
+          <div class="role-card">
+            <div class="role-header">
+              <div class="role-icon">🎯</div>
+              <div class="role-header-text">
+                <h3>STEM Success Center Mathematics Tutor</h3>
+                <p class="institution">Miami Dade College</p>
+              </div>
+            </div>
+
+            <p class="role-section-label">Responsibilities</p>
+            <ul class="role-list">
+              <li>Provided comprehensive one-on-one and small group tutoring in advanced mathematics, including Calculus, Differential Equations, and Linear Algebra.</li>
+              <li>Developed customized study plans and problem-solving strategies tailored to individual student learning styles.</li>
+              <li>Assisted students in bridging the gap between abstract mathematical theories and their practical applications in physics and engineering.</li>
+            </ul>
+
+            <div class="impact-box">
+              <p class="impact-label">Impact</p>
+              <p>"Helped students build the rigorous foundational mathematical skills essential for success in advanced physics coursework and research."</p>
+            </div>
+          </div>
+
+          <!-- PLTL Facilitator -->
+          <div class="role-card">
+            <div class="role-header">
+              <div class="role-icon">👥</div>
+              <div class="role-header-text">
+                <h3>PLTL (Peer-Led Team Learning) Facilitator</h3>
+                <p class="institution">Miami Dade College</p>
+              </div>
+            </div>
+
+            <p class="role-section-label">Responsibilities</p>
+            <ul class="role-list">
+              <li>Led weekly collaborative problem-solving sessions for introductory and intermediate physics courses.</li>
+              <li>Guided students through complex conceptual problems using Socratic questioning rather than direct instruction.</li>
+              <li>Collaborated with physics faculty to align workshop materials with lecture objectives and identify common student misconceptions.</li>
+            </ul>
+
+            <div class="impact-box">
+              <p class="impact-label">Impact</p>
+              <p>"Fostered a supportive learning community that significantly improved student retention, confidence, and comprehension in core physics concepts."</p>
+            </div>
+          </div>
+
+          <!-- Physics Tutor - TOPU Mentors -->
+          <div class="role-card">
+            <div class="role-header">
+              <div class="role-icon">🔭</div>
+              <div class="role-header-text">
+                <h3>Physics Tutor – TOPU Mentors</h3>
+                <p class="institution">Miami Dade College</p>
+              </div>
+            </div>
+
+            <p class="role-section-label">Responsibilities</p>
+            <ul class="role-list">
+              <li>Mentored underrepresented students in STEM fields, providing both academic support and guidance on navigating higher education.</li>
+              <li>Assisted peers with physics coursework, laboratory reports, and experimental data analysis.</li>
+              <li>Organized review sessions prior to major examinations and helped students develop effective scientific communication skills.</li>
+            </ul>
+
+            <div class="impact-box">
+              <p class="impact-label">Impact</p>
+              <p>"Empowered peers to overcome academic challenges, build confidence in their scientific abilities, and pursue ambitious goals in STEM."</p>
+            </div>
+          </div>
+
+        </div><!-- /role-cards -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© <span id="y"></span> Mayte Alvarez · Research Portfolio</span>
+    </div>
+    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  </footer>
+
+</body>
+</html>

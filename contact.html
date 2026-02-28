@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Mayte Alvarez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── Contact-specific styles ── */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 64px;
+      align-items: start;
+      padding-top: 8px;
+    }
+
+    /* Contact info items */
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .contact-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--navy);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #fff;
+      font-size: 1.1rem;
+    }
+
+    .contact-item-text strong {
+      display: block;
+      font-size: 0.97rem;
+      color: var(--ink);
+      margin-bottom: 2px;
+    }
+
+    .contact-item-text a,
+    .contact-item-text span {
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .contact-item-text a:hover {
+      color: var(--navy);
+      text-decoration: underline;
+    }
+
+    /* Research interests box */
+    .interests-box {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-top: 28px;
+    }
+
+    .interests-box h3 {
+      margin: 0 0 10px;
+      font-size: 1.1rem;
+      color: var(--navy);
+    }
+
+    .interests-box p {
+      font-size: 0.92rem;
+      color: #2a3b47;
+      margin: 0;
+      line-height: 1.65;
+    }
+
+    /* Form */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: var(--ink);
+      background: #fff;
+      outline: none;
+      transition: border-color 0.2s;
+      box-sizing: border-box;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--navy);
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: #a0adb5;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    .btn-send {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 24px;
+      background: var(--navy);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+      width: 100%;
+    }
+
+    .btn-send:hover {
+      background: var(--navy2);
+    }
+
+    @media (max-width: 800px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Research Portfolio</a>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="manuscript.html">Manuscript</a>
+        <a href="conferences.html">Conferences</a>
+        <a href="mentorship.html">Mentorship</a>
+        <a href="about.html">About</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero banner -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>I'm always interested in discussing research opportunities and collaborations</p>
+      </div>
+    </section>
+
+    <!-- Contact body -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Left: info -->
+          <div>
+            <h2>Contact Information</h2>
+
+            <div class="contact-item">
+              <div class="contact-icon">&#9993;</div>
+              <div class="contact-item-text">
+                <strong>Email</strong>
+                <a href="/cdn-cgi/l/email-protection#620f031b16074c030e1403100718525256220f1b0f06014c0c0716"><span class="__cf_email__" data-cfemail="b2dfd3cbc6d79cd3dec4d3c0d7c8828286f2dfcbdfd6d19cdcd7c6">[email&#160;protected]</span></a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">in</div>
+              <div class="contact-item-text">
+                <strong>LinkedIn</strong>
+               <a href="https://linkedin.com/in/mayte-a-5245a3346" target="_blank" rel="noopener">Visit my LinkedIn profile</a>
+              </div>
+            </div>
+
+            <div class="interests-box">
+              <h3>Research Interests</h3>
+              <p>I'm particularly interested in opportunities related to plasma physics, nonlinear dynamics, and computational modeling.</p>
+            </div>
+          </div>
+
+          <!-- Right: form -->
+          <div>
+            <h2>Send a Message</h2>
+            <form
+              class="contact-form"
+              action="https://formsubmit.co/maytealv04@gmail.com"
+              method="POST"
+            >
+              <!-- Disable captcha & redirect -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="New message from your portfolio">
+              <input type="hidden" name="_next" value="">
+
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What would you like to discuss?">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-send">
+                &#10148; Send Message
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© <span id="y"></span> Mayte Alvarez · Research P

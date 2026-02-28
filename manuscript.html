@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manuscript | Mayte Alvarez</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Research Portfolio</a>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="manuscript.html" class="active">Manuscript</a>
+        <a href="conferences.html">Conferences</a>
+        <a href="mentorship.html">Mentorship</a>
+        <a href="about.html">About</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Dark banner -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Barry Goldwater Scholarship Submission Manuscript</h1>
+        <p>Co-authored research manuscript on nonlinear time-series analysis (with Professor Adolfo Mendez)</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section">
+      <div class="container">
+        <h2>About This Manuscript</h2>
+        <p>
+          This manuscript represents a synthesis of my undergraduate research on nonlinear dynamics and deterministic chaos in solar radio burst spikes.
+          Co-authored with Professor Adolfo Mendez, it presents our methodological approach, analytical framework, and findings applying nonlinear time-series
+          analysis to astrophysical plasma phenomena.
+        </p>
+        <p>
+          The work emphasizes computational physics methods for uncovering hidden structure in complex systems and contributes to understanding solar radio emissions
+          and space weather dynamics.
+        </p>
+
+        <div class="mt-24">
+          <a class="btn" href="goldwater-manuscript.pdf" target="_blank" rel="noopener">Download Paper (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preview + Abstract -->
+    <section class="section soft">
+      <div class="container">
+        <div class="block">
+          <h2>Manuscript Preview</h2>
+          <p class="kicker">Preview of Barry Goldwater Scholarship submission manuscript</p>
+
+          <div class="mt-16">
+            <iframe
+              src="goldwater-manuscript.pdf"
+              style="width:100%; height:820px; border:1px solid #e7edf2; border-radius:10px;"
+              title="Goldwater manuscript preview">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="block mt-24">
+          <h2>Abstract</h2>
+          <p>
+            Solar radio burst spikes represent one of the most enigmatic phenomena in solar physics, characterized by rapid temporal fluctuations on millisecond timescales.
+            This study employs nonlinear time-series analysis techniques to test for deterministic chaos in these emissions.
+          </p>
+          <p>
+            Using phase-space reconstruction via Takens embedding and correlation dimension analysis, we find statistically significant evidence consistent with low-dimensional
+            chaotic attractors underlying the observed spike patterns. Statistical testing using control datasets indicates these signatures cannot be explained by linear stochastic
+            processes alone.
+          </p>
+          <p>
+            These results suggest solar radio burst spikes may arise from nonlinear plasma instabilities exhibiting deterministic chaotic behavior, with implications for understanding
+            the microphysics of solar radio emissions and for improving space weather forecasting frameworks. The methodology is transferable to other complex astrophysical and laboratory
+            plasma systems.
+          </p>
+        </div>
+
+        <div class="block mt-24">
+          <h2>Key Contributions</h2>
+          <div class="cards3">
+            <div class="card">
+              <div class="icon">◎</div>
+              <h3>Methodology</h3>
+              <p>Applied correlation dimension analysis within a nonlinear time-series pipeline for spike burst data.</p>
+            </div>
+            <div class="card">
+              <div class="icon">✓</div>
+              <h3>Validation</h3>
+              <p>Used control datasets to verify nonlinear structure is intrinsic rather than an observational artifact.</p>
+            </div>
+            <div class="card">
+              <div class="icon">⚡</div>
+              <h3>Physical Insight</h3>
+              <p>Interpreted results in the context of plasma instabilities and wave–particle interactions.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© <span id="y"></span> Mayte Alvarez · Research Portfolio</span>
+    </div>
+    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  </footer>
+
+</body>
+</html>

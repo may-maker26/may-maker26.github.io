@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research | Mayte Alvarez</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Research Portfolio</a>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="manuscript.html">Manuscript</a>
+        <a href="conferences.html">Conferences</a>
+        <a href="mentorship.html">Mentorship</a>
+        <a href="about.html">About</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Dark banner -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Nonlinear Dynamics and Deterministic Chaos in Solar Radio Burst Spikes</h1>
+        <p>In collaboration with Professor Adolfo Mendez, Miami Dade College</p>
+      </div>
+    </section>
+
+    <!-- Research Question -->
+    <section class="section">
+      <div class="container">
+        <h2>Research Question</h2>
+        <p>Can we identify and quantify deterministic chaotic behavior in solar radio burst spikes, and what does this reveal about the underlying plasma dynamics driving these phenomena?</p>
+
+        <div class="mt-32">
+          <h2>Background &amp; Motivation</h2>
+          <p>Solar radio bursts are intense electromagnetic emissions from the Sun&apos;s corona, often associated with solar flares and coronal mass ejections. These bursts exhibit complex temporal structures, including rapid fluctuations known as “spikes” that occur on millisecond timescales.</p>
+          <p>Understanding whether these spikes arise from deterministic chaotic processes or stochastic noise has implications for space weather prediction and for understanding plasma turbulence in astrophysical contexts. Traditional linear analysis methods are insufficient for capturing the nonlinear dynamics inherent in these systems.</p>
+        </div>
+
+        <div class="mt-32">
+          <h2>My Research Contributions</h2>
+          <p>In this study, I led the application of nonlinear time-series analysis to high-resolution observational data of solar radio spike bursts. I developed and implemented a computational pipeline to reconstruct phase space, enabling us to probe the underlying dynamical system.</p>
+          <p>By calculating correlation dimension and applying statistical testing, I isolated signatures of deterministic chaotic dynamics from stochastic background noise. I also generated control datasets to verify that detected nonlinearities were intrinsic to plasma processes rather than instrumental artifacts.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology block -->
+    <section class="section soft">
+      <div class="container">
+        <div class="block">
+          <h2>Methodology</h2>
+
+          <div class="method-list">
+            <div class="method-item">
+              <h3>Takens Embedding</h3>
+              <p>Reconstructing the phase space from time-series data using delay coordinates to reveal the underlying attractor geometry.</p>
+            </div>
+
+            <div class="method-item">
+              <h3>Correlation Dimension Analysis</h3>
+              <p>Computing the correlation dimension to quantify the fractal structure of the reconstructed attractor and distinguish chaos from noise.</p>
+            </div>
+
+            <div class="method-item">
+              <h3>Nonlinear Time-Series Modeling</h3>
+              <p>Applying techniques to characterize temporal dependencies and identify deterministic patterns in the data.</p>
+            </div>
+
+            <div class="method-item">
+              <h3>Statistical Testing</h3>
+              <p>Generating control datasets that preserve linear properties while destroying nonlinear structure to validate findings.</p>
+            </div>
+
+            <div class="method-item">
+              <h3>Statistical Validation</h3>
+              <p>Employing statistical methods to ensure robustness and significance of detected nonlinear signatures.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster -->
+        <div class="block poster-wrap mt-24">
+          <h2>Research Poster</h2>
+          <p class="kicker">AGU poster on nonlinear dynamics and deterministic chaos in solar radio burst spikes</p>
+
+          <div class="mt-16">
+            <img class="poster-img" src="poster-agu-2025.jpg" alt="AGU 2025 research poster">
+          </div>
+
+          <div class="mt-16">
+            <a class="btn" href="poster-agu-2025.pdf" target="_blank" rel="noopener">Download Poster (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Findings + Impact -->
+    <section class="section">
+      <div class="container">
+        <h2>Key Findings</h2>
+        <p>Our analysis revealed statistically significant evidence of low-dimensional deterministic chaos in solar radio burst spikes, with correlation dimensions consistently lower than those of control datasets. This suggests that the observed temporal patterns are not purely stochastic but arise from underlying nonlinear dynamical processes.</p>
+        <p>The identified chaotic signatures provide insights into plasma instabilities and wave-particle interactions driving these emissions, offering a framework for understanding solar radio phenomena and potentially improving space weather forecasting capabilities.</p>
+
+        <div class="mt-32">
+          <h2>Broader Impact &amp; Future Directions</h2>
+          <p>This research demonstrates the applicability of nonlinear dynamics techniques to astrophysical phenomena. The methodology can be extended to other complex systems exhibiting turbulent behavior.</p>
+          <p>Future work will explore mechanisms underlying the observed chaos, investigate relationships between chaotic dynamics and solar activity cycles, and develop predictive models for space weather applications. I also aim to apply these techniques to laboratory plasma experiments and fusion research contexts.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© <span id="y"></span> Mayte Alvarez · Research Portfolio</span>
+    </div>
+    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  </footer>
+
+</body>
+</html>
