@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HVRQWMXHXL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-HVRQWMXHXL');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HVRQWMXHXL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HVRQWMXHXL');
+  </script>
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -40,10 +40,21 @@
       display: block;
       filter: grayscale(1);
     }
-    .interest-card h3 { font-size: 1.05rem; color: var(--navy); margin: 0 0 10px; }
-    .interest-card p  { font-size: 0.92rem; color: #2a3b47; margin: 0; line-height: 1.6; }
+    .interest-card h3 {
+      font-size: 1.05rem;
+      color: var(--navy);
+      margin: 0 0 10px;
+    }
+    .interest-card p {
+      font-size: 0.92rem;
+      color: #2a3b47;
+      margin: 0;
+      line-height: 1.6;
+    }
 
-    .goals-section { margin-top: 8px; }
+    .goals-section {
+      margin-top: 8px;
+    }
 
     .expertise-grid {
       display: grid;
@@ -55,8 +66,17 @@
       border-left: 4px solid var(--navy);
       padding-left: 20px;
     }
-    .expertise-col h3 { font-size: 1rem; font-weight: 600; color: var(--ink); margin: 0 0 14px; }
-    .expertise-col ul { list-style: none; padding: 0; margin: 0; }
+    .expertise-col h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 0 0 14px;
+    }
+    .expertise-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
     .expertise-col ul li {
       position: relative;
       padding-left: 16px;
@@ -73,7 +93,6 @@
       font-weight: 700;
     }
 
-    /* NEW REFLECTION STYLE */
     .reflection-card {
       background: var(--card);
       border: 1px solid var(--line);
@@ -93,133 +112,136 @@
     }
 
     @media (max-width: 800px) {
-      .interest-cards { grid-template-columns: 1fr; }
-      .expertise-grid { grid-template-columns: 1fr; }
+      .interest-cards {
+        grid-template-columns: 1fr;
+      }
+      .expertise-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header class="navbar">
-  <div class="container nav-inner">
-    <a class="brand" href="index.html">Research Portfolio</a>
-    <nav class="menu">
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="manuscript.html">Manuscript</a>
-      <a href="conferences.html">Conferences</a>
-      <a href="mentorship.html">Mentorship</a>
-      <a href="about.html" class="active">About</a>
-      <a href="media.html">Media</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Research Portfolio</a>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="manuscript.html">Manuscript</a>
+        <a href="conferences.html">Conferences</a>
+        <a href="mentorship.html">Mentorship</a>
+        <a href="about.html" class="active">About</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
+  <main>
 
-<section class="page-hero">
-  <div class="container">
-    <h1>About Me</h1>
-    <p>Pursuing excellence in plasma physics research</p>
-  </div>
-</section>
+    <section class="page-hero">
+      <div class="container">
+        <h1>About Me</h1>
+        <p>Pursuing excellence in plasma physics research</p>
+      </div>
+    </section>
 
-<section class="section">
-<div class="container">
+    <section class="section">
+      <div class="container">
 
-<h2>Academic Background</h2>
-<p>I am a physics major at Miami Dade College with a deep fascination for the complex behavior of plasma systems and nonlinear dynamics. My academic journey has been shaped by a genuine curiosity about the underlying order hidden within seemingly chaotic phenomena, and a desire to develop the mathematical and computational tools to reveal it.</p>
-<p>Through my undergraduate research with Professor Adolfo Mendez, I have built hands-on expertise in computational physics, nonlinear time-series analysis, and statistical validation.</p>
+        <h2>Academic Background</h2>
+        <p>I am a physics major at Miami Dade College with a deep fascination for the complex behavior of plasma systems and nonlinear dynamics. My academic journey has been shaped by a genuine curiosity about the underlying order hidden within seemingly chaotic phenomena, and a desire to develop the mathematical and computational tools to reveal it.</p>
+        <p>Through my undergraduate research with Professor Adolfo Mendez, I have built hands-on expertise in computational physics, nonlinear time-series analysis, and statistical validation. My work centers on applying phase-space reconstruction and correlation dimension techniques to solar radio burst data, asking whether the irregularity we observe in these emissions is truly random, or whether something more structured lies beneath.</p>
 
-<div class="mt-32">
-<h2>Research Interests</h2>
-<div class="interest-cards">
-<div class="interest-card">
-<span class="interest-icon">&#9889;</span>
-<h3>Plasma Physics</h3>
-<p>Investigating nonlinear dynamics and deterministic chaos in astrophysical and laboratory plasmas.</p>
-</div>
+        <div class="mt-32">
+          <h2>Research Interests</h2>
+          <div class="interest-cards">
+            <div class="interest-card">
+              <span class="interest-icon">&#9889;</span>
+              <h3>Plasma Physics</h3>
+              <p>Investigating nonlinear dynamics and deterministic chaos in astrophysical and laboratory plasmas, with a focus on solar radio emissions.</p>
+            </div>
 
-<div class="interest-card">
-<span class="interest-icon">&#9678;</span>
-<h3>Turbulence &amp; MHD Instabilities</h3>
-<p>Exploring magnetohydrodynamic phenomena and their role in plasma confinement and stability.</p>
-</div>
+            <div class="interest-card">
+              <span class="interest-icon">&#9678;</span>
+              <h3>Turbulence &amp; MHD Instabilities</h3>
+              <p>Exploring magnetohydrodynamic phenomena and their role in plasma confinement, stability, and energy transport.</p>
+            </div>
 
-<div class="interest-card">
-<span class="interest-icon">&#127891;</span>
-<h3>Predictive Modeling</h3>
-<p>Developing computational frameworks for forecasting complex plasma behavior.</p>
-</div>
-</div>
-</div>
+            <div class="interest-card">
+              <span class="interest-icon">&#127891;</span>
+              <h3>Predictive Modeling</h3>
+              <p>Developing computational frameworks for forecasting complex plasma behavior and space weather events using data-driven approaches.</p>
+            </div>
+          </div>
+        </div>
 
-<div class="mt-32 goals-section">
-<h2>Long-term Goals</h2>
-<p>My goal is to pursue a PhD in plasma physics and build a research career that connects theory, computation, and experiment.</p>
-</div>
+        <div class="mt-32 goals-section">
+          <h2>Long-term Goals</h2>
+          <p>My goal is to pursue a PhD in plasma physics, where I can keep exploring the intersection of nonlinear dynamics, computational modeling, and experimental research. I am particularly drawn to turbulence in magnetically confined plasmas and its implications for fusion energy, a problem that sits at the edge of our current understanding and has real consequences for the future of clean energy.</p>
+          <p>I want to build a research career that connects theory, computation, and experiment: from astrophysical phenomena like solar radio bursts to practical challenges in fusion reactor design. More than anything, I want to keep asking hard questions and developing the rigorous methods to answer them, and to do that alongside a community of scientists.</p>
+        </div>
 
-<!-- SERVICE LEARNING REFLECTION -->
-<div class="mt-32">
-<h2>Honors College Service Learning Reflection</h2>
-<div class="reflection-card">
+        <div class="mt-32">
+          <h2>Honors College Service Learning Reflection</h2>
+          <div class="reflection-card">
+            <p>What I keep thinking about when I look back at these experiences is how quickly people change when they realize something is actually theirs to figure out.</p>
 
-<p>What I keep thinking about when I look back at these experiences is how quickly people change when they realize something is actually theirs to figure out.</p>
+            <p>I saw this at Slingshot Marketplace. At the start, most students explained their projects in a very controlled way. It sounded prepared, but it felt distant. When I asked them simple questions like why their work mattered or who they were trying to reach, their answers shifted. Some of them paused longer. Some restarted their explanation completely. But when they spoke again, it was different. It was more direct, and people paid attention to them in a different way. Nothing about their project changed in that moment. Only the way they were thinking about it did.</p>
 
-<p>I saw this at Slingshot Marketplace. At the start, most students explained their projects in a very controlled way. It sounded prepared, but it felt distant. When I asked them simple questions like why their work mattered or who they were trying to reach, their answers shifted. Some of them paused longer. Some restarted their explanation completely. But when they spoke again, it was different. It was more direct, and people paid attention to them in a different way.</p>
+            <p>I used to think helping meant giving answers or making things easier for someone. In these moments, I stopped doing that. Asking the right question had more impact than explaining anything myself, because it forced people to think through their own ideas instead of repeating something they had prepared.</p>
 
-<p>During the NASA Space Apps Challenge, teams came back tired but more certain about what they were doing. I spent most of the time checking in and helping them organize how they would present. At the end, they were not just describing outcomes. They understood their own decisions.</p>
+            <p>During the NASA Space Apps Challenge, the shift looked different but felt similar. After a full night of working, teams came back tired but more certain about what they were doing. I spent most of the time checking in and helping them organize how they would present. At the end, when they explained their projects, they were not just describing outcomes. They understood their own decisions. You could tell which teams had reached that point because they did not hesitate when they were questioned.</p>
 
-<p>During the food distribution, I registered more than 675 residents, mostly seniors. One woman told me she appreciated being spoken to patiently. It was a simple comment, but it stayed with me longer than the numbers.</p>
+            <p>Other experiences stayed with me for smaller reasons. During the food distribution, I registered more than 675 residents, mostly seniors. The process itself was repetitive, but the interactions were not. Some people moved through quickly, others stopped to talk, even for a few seconds. One woman told me she appreciated being spoken to patiently. It was a simple comment, but it stayed with me longer than the numbers.</p>
 
-<p>The same thing happened during the community cleanup and the Quinceañera event for elderly residents. The work was simple, but the conversations were not.</p>
+            <p>The same kind of thing happened during the community cleanup and the Quinceañera event for elderly residents. The work itself was straightforward. What mattered more were the conversations that happened in between. Listening to people who have been part of that community for decades changes how you understand the space you are in.</p>
 
-<p>Writing letters and making bracelets for young cancer patients felt quieter. There was no direct response, but there was still intention behind it.</p>
+            <p>Writing letters and making bracelets for young cancer patients felt quieter. There was no direct response, no immediate feedback. Still, there was intention behind it. You think more carefully about what you choose to say when you know it might reach someone during a difficult moment.</p>
 
-<p>Across all of this, I started paying attention to what happens after you step back. That is the part of service that I take seriously now.</p>
+            <p>Across all of this, I started paying attention to what happens after you step back. Whether someone continues thinking through their idea or carries a small interaction with them, the impact is not always visible right away. That is the part of service that I take seriously now, and it is something I will carry into how I work with others in the future.</p>
+          </div>
+        </div>
 
-</div>
-</div>
+        <div class="mt-32">
+          <h2>Technical Expertise</h2>
+          <div class="expertise-grid">
+            <div class="expertise-col">
+              <h3>Computational Methods</h3>
+              <ul>
+                <li>Phase-space reconstruction techniques</li>
+                <li>Nonlinear time-series analysis</li>
+                <li>MATLAB computing</li>
+              </ul>
+            </div>
 
-<div class="mt-32">
-<h2>Technical Expertise</h2>
-<div class="expertise-grid">
+            <div class="expertise-col">
+              <h3>Theoretical Background</h3>
+              <ul>
+                <li>Nonlinear dynamics and chaos theory</li>
+                <li>Plasma physics fundamentals</li>
+                <li>Solar and space physics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-<div class="expertise-col">
-<h3>Computational Methods</h3>
-<ul>
-<li>Phase-space reconstruction techniques</li>
-<li>Nonlinear time-series analysis</li>
-<li>MATLAB computing</li>
-</ul>
-</div>
+      </div>
+    </section>
+  </main>
 
-<div class="expertise-col">
-<h3>Theoretical Background</h3>
-<ul>
-<li>Nonlinear dynamics and chaos theory</li>
-<li>Plasma physics fundamentals</li>
-<li>Solar and space physics</li>
-</ul>
-</div>
-
-</div>
-</div>
-
-</div>
-</section>
-
-</main>
-
-<footer>
-<div class="container">
-<span>© <span id="y"></span> Mayte Alvarez · Research Portfolio</span>
-</div>
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
-</footer>
+  <footer>
+    <div class="container">
+      <span>© <span id="y"></span> Mayte Alvarez · Research Portfolio</span>
+    </div>
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 
 </body>
 </html>
